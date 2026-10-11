@@ -46,6 +46,7 @@ jobs:
 
     - name: Download temp file artifact
       uses: dawidd6/action-download-artifact@v6
+      continue-on-error: true
       with:
         github_token: ${{secrets.GITHUB_TOKEN}}
         branch: main
